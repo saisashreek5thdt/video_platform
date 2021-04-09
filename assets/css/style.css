@@ -3938,6 +3938,14 @@ select.form-control:not([size]):not([multiple]) {
 	border-radius: 1000px
 }
 
+.table .team-member i {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	border: 0;
+	border-radius: 1000px
+}
+
 .table .team-member-sm {
 	width: 32px;
 	-webkit-transition: all 0.25s ease;
@@ -3958,6 +3966,11 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .table .order-list li img {
+	border: 2px solid #ffffff;
+	box-shadow: 4px 3px 6px 0 rgba(0, 0, 0, 0.2)
+}
+
+.table .order-list li i {
 	border: 2px solid #ffffff;
 	box-shadow: 4px 3px 6px 0 rgba(0, 0, 0, 0.2)
 }

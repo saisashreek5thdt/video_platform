@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+      <title>Video Platform</title>
+      <!-- General CSS Files -->
+      <link rel="stylesheet" href="assets/css/app.min.css">
+      <!-- Template CSS -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/components.css">
+      <!-- Custom style CSS -->
+      <link rel="stylesheet" href="assets/css/custom.css">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+   </head>
+   <body>
+      <div class="loader"></div>
+      <div id="app">
+         <div class="main-wrapper main-wrapper-1">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar sticky">
+               <div class="form-inline mr-auto">
+				   <ul class="navbar-nav mr-3">
+						<li>
+							<a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn">
+								<i data-feather="align-justify"></i>
+							</a>
+					   </li>
+					</ul>
+			   </div>
+               <ul class="navbar-nav navbar-right">
+                  <li class="dropdown">
+                     <a href="#" data-toggle="dropdown"  class="nav-link dropdown-toggle nav-link-lg nav-link-user"> 
+						 <img alt="image" src="assets/images/user.png" class="user-img-radious-style"> 
+						 <span class="d-sm-none d-lg-inline-block"></span>
+					  </a>
+                     <div class="dropdown-menu dropdown-menu-right pullDown">
+                        <div class="dropdown-title">Hello User Name</div>
+                        <a href="#" class="dropdown-item has-icon"> 
+							<i class="far fa-user"></i> Profile
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="index.html" class="dropdown-item has-icon text-danger">
+							<i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                     </div>
+                  </li>
+               </ul>
+            </nav>
+            <div class="main-sidebar sidebar-style-2">
+               <aside id="sidebar-wrapper">
+                  <div class="sidebar-brand">
+                     <a href="dashboard.html">
+						 <img alt="image" src="assets/images/logo.png" class="header-logo" />
+						 <span class="logo-name">Video Platform</span>
+                     </a>
+                  </div>
+                  <ul class="sidebar-menu">
+                     <li class="dropdown">
+                        <a href="dashboard.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+                     </li>
+					 <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="film"></i><span>Videos</span></a>
+						<ul class="dropdown-menu">
+							<li><a class="nav-link" href="video_upload.html">Uploaded</a></li>
+							<li><a class="nav-link" href="video_list.html">List</a></li>
+						</ul> 
+                     </li>
+					 <li class="dropdown active">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="folder"></i><span>Label</span></a>
+						<ul class="dropdown-menu">
+							<li><a class="nav-link" href="folders.html">Create</a></li>
+							<li><a class="nav-link" href="folders.html">List</a></li>
+						</ul> 
+                     </li> 
+                  </ul>
+               </aside>
+            </div>
+            <!-- Main Content -->
+            <div class="main-content">
+               <section class="section">
+                  <div class="row">
+					 <div class="col-md-6 col-lg-12 col-xl-6">
+						 <div class="card">
+							 <div class="card-header">
+								 <h4>Create Labels</h4>
+							 </div>
+							 <div class="card-body">
+								 <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Class Name</label>
+                                    <div class="col-sm-12 col-md-7">
+                                       <input type="text" class="form-control" placeholder="Enter Class Name">
+                                    </div>
+                                 </div>
+								 <div class="form-group row mb-4">
+									 <div class="col-sm-12 col-md-7">
+                                       <h3 class="text-center">(OR)</h3>
+                                    </div>
+								 </div>
+								 <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Subject Name</label>
+                                    <div class="col-sm-12 col-md-7">
+                                       <input type="text" class="form-control" placeholder="Enter Subject Name">
+                                    </div>
+                                 </div>
+								 <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
+                                    <div class="col-sm-12 col-md-7">
+                                       <button class="btn btn-primary">Create Lables</button>
+                                    </div>
+                                 </div>
+							 </div>
+						 </div>
+					 </div>
+                  </div>
+				  <div class="row">
+					  <div class="col-md-6 col-lg-12 col-xl-6">
+                        <div class="card">
+                           <div class="card-header">
+                              <h4>List of Labels (CLASSESS)</h4>
+                           </div>
+                           <div class="card-body">
+                              <div class="table-responsive">
+                                 <table class="table table-hover mb-0">
+                                    <thead>
+                                       <tr>
+                                          <th>#</th>
+                                          <th>Class Name</th>
+                                          <th>Date</th>
+                                          <th>Created By</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>Class One </td>
+                                          <td>09-04-2021</td>
+                                          <td>Sashreek</td>
+                                       </tr>
+									   <tr>
+                                          <td>2</td>
+                                          <td>Class Four </td>
+                                          <td>09-04-2021</td>
+                                          <td>Sashreek</td>
+                                       </tr>
+									   <tr>
+                                          <td>3</td>
+                                          <td>Class Three </td>
+                                          <td>09-04-2021</td>
+                                          <td>Sashreek</td>
+                                       </tr>
+									   <tr>
+                                          <td>4</td>
+                                          <td>Class Ten </td>
+                                          <td>09-04-2021</td>
+                                          <td>Sashreek</td>
+                                       </tr>	
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+					 <div class="col-md-6 col-lg-12 col-xl-6">
+                        <div class="card">
+                           <div class="card-header">
+                              <h4>List of Labels (SUBJECT)</h4>
+                           </div>
+                           <div class="card-body">
+                              <div class="table-responsive">
+                                 <table class="table table-hover mb-0">
+                                    <thead>
+                                       <tr>
+                                          <th>#</th>
+                                          <th>Subject Name</th>
+                                          <th>Date</th>
+                                          <th>Created By</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>Maths</td>
+                                          <td>09-04-2021</td>
+                                          <td>Sashreek</td>
+                                       </tr>
+									   <tr>
+                                          <td>2</td>
+                                          <td>English</td>
+                                          <td>09-04-2021</td>
+                                          <td>Sashreek</td>
+                                       </tr>
+									   <tr>
+                                          <td>3</td>
+                                          <td>English</td>
+                                          <td>09-04-2021</td>
+                                          <td>Sashreek</td>
+                                       </tr>
+									   <tr>
+                                          <td>4</td>
+                                          <td>Science</td>
+                                          <td>09-04-2021</td>
+                                          <td>Sashreek</td>
+                                       </tr>	
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div> 
+				  </div> 
+               </section>
+            </div>
+            <footer class="main-footer">
+               <div class="footer-left">
+                  Copyright &copy; <a href="http://5thdt.com/">5TH Dimension Technologies</a> <span id="year"></span>
+               </div>
+               <div class="footer-right">
+               </div>
+            </footer>
+         </div>
+      </div>
+      <!-- General JS Scripts -->
+      <script src="assets/js/app.min.js"></script>
+      <!-- JS Libraies -->
+      <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
+
+      <!-- Page Specific JS File -->
+      <script src="assets/js/page/index.js"></script>
+      <!-- Template JS File -->
+      <script src="assets/js/scripts.js"></script>
+      <!-- Custom JS File -->
+      <script src="assets/js/custom.js"></script>
+	  <script type="text/javascript">
+		  document.getElementById("year").innerHTML = new Date().getFullYear();
+	  </script> 
+   </body>
+</html>
