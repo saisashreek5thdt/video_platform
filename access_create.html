@@ -9,7 +9,7 @@
       <!-- Template CSS -->
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/components.css">
-	  <link rel="stylesheet" href="assets/bundles/dropzonejs/dropzone.css"> 
+	  <link rel="stylesheet" href="assets/bundles/jquery-selectric/selectric.css"> 
       <!-- Custom style CSS -->
       <link rel="stylesheet" href="assets/css/custom.css">
       <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -60,7 +60,7 @@
                      <li class="dropdown">
                         <a href="dashboard.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
                      </li>
-					 <li class="dropdown active">
+					 <li class="dropdown">
                         <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="film"></i><span>Videos</span></a>
 						<ul class="dropdown-menu">
 							<li><a class="nav-link" href="video_upload.html">Uploaded</a></li>
@@ -68,13 +68,13 @@
 						</ul> 
                      </li>
 					 <li class="dropdown">
-                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="folder"></i><span>Folder</span></a>
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="folder"></i><span>Label</span></a>
 						<ul class="dropdown-menu">
 							<li><a class="nav-link" href="folders.html">Create</a></li>
 							<li><a class="nav-link" href="folders.html">List</a></li>
 						</ul> 
                      </li>
-					 <li class="dropdown">
+					 <li class="dropdown active">
                         <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="user"></i><span>Access</span></a>
 						<ul class="dropdown-menu">
 							<li><a class="nav-link" href="access_create.html">Create</a></li>
@@ -88,55 +88,84 @@
             <div class="main-content">
                <section class="section">
                   <div class="row">
-					  <div class="col-12">
+                     <div class="col-12">
 						 <div class="card">
-							 <div class="card-header">
-								 <h4>Upload Videos</h4>
-							 </div>
-							 <div class="card-body">
-								 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Video Title</label>
-                                    <div class="col-sm-12 col-md-7">
-                                       <input type="text" class="form-control" placeholder="Enter Video Title">
+                           <div class="card-header">
+                              <h4>Create Access</h4>
+                           </div>
+                           <div class="card-body">
+                              <div class="form-group row mb-4">
+                                 <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Name</label>
+                                 <div class="col-sm-6 col-md-4">
+                                    <input type="text" class="form-control" placeholder="Enter First Name">
+                                 </div>
+								 <div class="col-sm-6 col-md-4">
+                                    <input type="text" class="form-control" placeholder="Enter Last Name">
+                                 </div> 
+                              </div>
+                              <div class="form-group row mb-4">
+                                 <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Email</label>
+                                 <div class="col-sm-4 col-md-3">
+                                    <div class="input-group mb-3">
+                                       <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                          <i data-feather="mail"></i>
+                                          </span>
+                                       </div>
+                                       <input type="email" class="form-control" aria-label="Only Email is Accepted">
                                     </div>
                                  </div>
-								 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Select Class</label>
-                                    <div class="col-sm-12 col-md-7">
-                                       <select class="form-control selectric">
-                                          <option>--- Please Select Your Class ---</option>
-										  <option>Class One</option> 
-                                          <option>Class Two</option>
-                                          <option>Class Three</option>
-                                       </select>
+                              </div>
+							  <div class="form-group row mb-4">
+                                 <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Password</label>
+                                 <div class="col-sm-4 col-md-3">
+                                    <div class="input-group mb-3">
+                                       <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                          <i data-feather="eye-off"></i>
+                                          </span>
+                                       </div>
+                                       <input type="password" class="form-control" aria-label="Minimum 8 and Maximum 16 Characters">
                                     </div>
                                  </div>
-								 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Select Subject</label>
-                                    <div class="col-sm-12 col-md-7">
-                                       <select class="form-control selectric">
-                                          <option>--- Please Select Your Subject ---</option>
-										  <option>Mathematics</option> 
-                                          <option>English</option>
-                                          <option>Science</option>
-                                       </select>
-                                    </div>
+								 <div class="col-sm-4 col-md-3">
+									 <div class="input-group mb-5">
+										 <h6 class="font-weight-bold">(Minimum 8 and Maximum 16 above Characters)</h6>
+									 </div>
+								 </div> 
+                              </div>
+                              <div class="form-group row mb-4">
+                                 <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Add Access</label>
+                                 <div class="col-sm-6 col-md-4">
+                                    <select class="form-control selectric" multiple="">
+                                       <option class="text-center">*Select Subjects Access Control*</option>
+                                       <option>Access ALL</option>
+									   <option>English</option>	
+                                       <option>Mathematics</option>
+                                       <option>Science</option>
+                                       <option>Social</option>	
+                                    </select>
                                  </div>
-								 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Video Title</label>
-                                    <div class="col-sm-12 col-md-7 dropzone" id="mydropzone">
-                                       <input type="file" name="file" class="fallback file" placeholder="Upload Video Files" multiple />
-                                    </div>
+								 <div class="col-sm-6 col-md-4">
+                                    <select class="form-control selectric" multiple="">
+                                       <option class="text-center">*Select Class Access Control*</option>
+                                       <option>Access ALL</option>
+									   <option>Class One</option>	
+                                       <option>Class Two</option>
+                                       <option>Class Three</option>
+                                       <option>Class Five</option>
+                                    </select>
+                                 </div> 
+                              </div>
+                              <div class="form-group row mb-4">
+                                 <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
+                                 <div class="col-sm-12 col-md-7">
+                                    <button class="btn btn-primary">CREATE ACCESS</button>
                                  </div>
-								 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
-                                    <div class="col-sm-12 col-md-7">
-                                       <button class="btn btn-primary">Upload Video</button>
-                                    </div>
-                                 </div>
-							 </div>
-						 </div>
-					 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </section>
             </div>
@@ -152,10 +181,8 @@
       <!-- General JS Scripts -->
       <script src="assets/js/app.min.js"></script>
       <!-- JS Libraies -->
-      <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
-	  <script src="assets/bundles/dropzonejs/min/dropzone.min.js"></script>
+      <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
       <!-- Page Specific JS File -->
-	  <script src="assets/js/page/multiple-upload.js"></script> 
       <script src="assets/js/page/index.js"></script>
       <!-- Template JS File -->
       <script src="assets/js/scripts.js"></script>
